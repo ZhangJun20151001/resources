@@ -19,6 +19,7 @@ jQuery.cookie = function(a, c, b) {
         return c
     }
 };
+window.RootCookies = {};
 var user = "297585985";
 var name = "412061247";
 var showName = "不想炸毛的猫";
@@ -223,7 +224,6 @@ $play.click(function() {
     $player.toggleClass("show")
 });
 $(function() {
-    window.RootCookies = {};
     window.RootCookies.SetCookie = function(a, c, b) {
         var d = new Date;
         d.setTime(d.getTime() + 864E5 * b);
@@ -508,7 +508,6 @@ function LimitStr(a, c, b) {
     g < e && (d += b);
     return d
 }
-
 function loadblur(a) {
     var c = "",
         b = $(".blur"),
@@ -529,12 +528,10 @@ function loadblur(a) {
     };
     c = d.src = a
 }
-
 function allmusic() {
     $("li", $albumList).eq(albumId).addClass(cur).find(".artist").html("不想炸毛的猫").parent().siblings().removeClass(cur).find(".artist").html("").parent();
     "" == !$("ul", $songList).html() && $("[data-album=" + albumId + "]").length && ($("[data-album=" + albumId + "]").find("li").eq(songId).addClass(cur).siblings().removeClass(cur), $songList.mCustomScrollbar("scrollTo", $("li.current", $songList).position().top - 120))
 }
-
 function playercolor() {
     $player.css({
         background: "rgba(" + cont + ",.8)"
@@ -549,7 +546,6 @@ function playercolor() {
         background: "rgba(" + cont + ",.8)"
     })
 }
-
 function music(a, c) {
     $("#wenkmLrc").show();
     albumId = a - 1;
