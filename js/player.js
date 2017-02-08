@@ -18,9 +18,9 @@ jQuery.cookie = function(a, c, b) {
 	}
 };
 var NeiCeList;
-if (navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i)) $("#wenkmPlayer").hide();
-else if (top.location != self.location) $("#wenkmPlayer").hide();
-else {
+// if (navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i)) $("#wenkmPlayer").hide();
+// else if (top.location != self.location) $("#wenkmPlayer").hide();
+// else {
 	var formatSecond = function(a) {
 			return ("00" + Math.floor(a / 60)).substr(-2) + ":" + ("00" + Math.floor(a % 60)).substr(-2)
 		},
@@ -490,7 +490,7 @@ else {
 				}
 			}
 		}
-}
+// }
 function LimitStr(a, c, b) {
 	c = c || 6;
 	b = b || "...";
