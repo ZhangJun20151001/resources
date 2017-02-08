@@ -23,7 +23,8 @@ var geci = "open";
 var auto = "colse";
 var random = "open";
 var welcome = "open";
-var NeiCeList;
+var tips = "welcome!" ;
+var NeiCeLists;
 
 // if (navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i)) $("#wenkmPlayer").hide();
 // else if (top.location != self.location) $("#wenkmPlayer").hide();
