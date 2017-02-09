@@ -29,6 +29,7 @@ var random = "open";
 var welcome = "open";
 var tips = "welcome!";
 var NeiCeLists;
+var cont="12,12,12"
 // if (navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i)) $("#wenkmPlayer").hide();
 // else if (top.location != self.location) $("#wenkmPlayer").hide();
 // else {
