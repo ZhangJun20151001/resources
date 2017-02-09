@@ -398,7 +398,7 @@ wenkmPlayer.playList = {
         album: function() {
             var a = NeiCeLists.length,
                 c = "";
-            $(".musicheader", $albumList).text(name + "(" + a + ")");
+            $(".musicheader", $albumList).text(showName + "(" + a + ")");
             for (var b = 0; b < a; b++) c += '<li><i class="fa fa-angle-right"></i><span class="index">' + (b + 1) + '</span><span class="artist"></span>' + NeiCeLists[b].song_album + " - " + NeiCeLists[b].song_album1 + "</li>";
             $(".list", $albumList).html("<ul>" + c + "</ul>").mCustomScrollbar();
             $("li", $albumList).click(function() {
